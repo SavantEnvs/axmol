@@ -1,0 +1,2 @@
+<?xml version="1.0"?><map version="1.0" orientation="orthogonal" width="2" height="2" tilewidth="32" tileheight="32"><tileset firstgid="1" name="t" tilewidth="32" tileheight="32"><image source="t.png" width="64" height="64"/></tileset><layer name="L" width="2" height="2"><data encoding="csv">1,2,
+3,4</data></layer><objectgroup name="o"><object x="1" y="2"><properties><property name="p" value="v"/></properties></object></objectgroup></map>

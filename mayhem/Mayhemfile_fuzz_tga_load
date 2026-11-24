@@ -1,0 +1,11 @@
+project: savantenvs/axmol
+target: fuzz-tga-load
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-tga-load/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_tga_load
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,11 @@
+project: savantenvs/axmol
+target: fuzz-uri-parse
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-uri-parse/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_uri_parse
+    libfuzzer: true
+    timeout: 10

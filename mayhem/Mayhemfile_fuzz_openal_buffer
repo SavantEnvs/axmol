@@ -1,0 +1,11 @@
+project: savantenvs/axmol
+target: fuzz-openal-buffer
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-openal-buffer/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_openal_buffer
+    libfuzzer: true
+    timeout: 10
